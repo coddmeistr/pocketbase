@@ -22,10 +22,8 @@
 
         try {
             const result = (await ApiClient.settings.getAll()) || {};
-            alert(result);
             initSettings(result);
         } catch (err) {
-            alert(err);
             ApiClient.error(err);
         }
 
