@@ -22,8 +22,10 @@
 
         try {
             const result = (await ApiClient.settings.getAll()) || {};
+            alert(result);
             initSettings(result);
         } catch (err) {
+            alert(err);
             ApiClient.error(err);
         }
 
@@ -37,6 +39,7 @@
         for (const provider of providersList) {
             formSettings[provider.key] = Object.assign({ enabled: false }, data[provider.key]);
         }
+        alert(formSettings);
     }
 </script>
 
