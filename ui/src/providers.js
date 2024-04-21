@@ -22,6 +22,11 @@ export default [
         optionsComponent: AppleOptions,
     },
     {
+        key:   "youtubeAuth",
+        title: "Youtube",
+        logo:  "youtube.svg",
+    },
+    {
         key:   "googleAuth",
         title: "Google",
         logo:  "google.svg",
