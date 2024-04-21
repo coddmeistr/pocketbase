@@ -68,12 +68,12 @@ func (p *Youtube) FetchAuthUser(token *oauth2.Token) (*AuthUser, error) {
 	}
 
 	// Fetch youtube channel info
-	youtubeChannelResponse := struct {
-		items []struct {
-			id      string
-			snippet struct {
-				title     string
-				customUrl string
+	YoutubeChannelResponse := struct {
+		Items []struct {
+			Id      string
+			Snippet struct {
+				Title     string
+				CustomUrl string
 			}
 		}
 	}{}
@@ -95,19 +95,19 @@ func (p *Youtube) FetchAuthUser(token *oauth2.Token) (*AuthUser, error) {
 	if err != nil {
 		return nil, err
 	}
-	err = json.Unmarshal(body, &youtubeChannelResponse)
+	err = json.Unmarshal(body, &YoutubeChannelResponse)
 	if err != nil {
 		return nil, err
 	}
-	if len(youtubeChannelResponse.items) == 0 || youtubeChannelResponse.items[0].snippet.title == "" {
+	if len(YoutubeChannelResponse.Items) == 0 || YoutubeChannelResponse.Items[0].Snippet.Title == "" {
 		return nil, errors.New("no youtube account data found")
 	}
-	channel := youtubeChannelResponse.items[0]
+	channel := YoutubeChannelResponse.Items[0]
 
 	user := &AuthUser{
-		Id:           channel.id,
-		Name:         channel.snippet.title,
-		Username:     channel.snippet.customUrl,
+		Id:           channel.Id,
+		Name:         channel.Snippet.Title,
+		Username:     channel.Snippet.CustomUrl,
 		AvatarUrl:    extracted.Picture,
 		RawUser:      rawUser,
 		AccessToken:  token.AccessToken,
