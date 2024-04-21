@@ -67,6 +67,7 @@ type Settings struct {
 	MailcowAuth        AuthProviderConfig `form:"mailcowAuth" json:"mailcowAuth"`
 	BitbucketAuth      AuthProviderConfig `form:"bitbucketAuth" json:"bitbucketAuth"`
 	PlanningcenterAuth AuthProviderConfig `form:"planningcenterAuth" json:"planningcenterAuth"`
+	YoutubeAuth        AuthProviderConfig `form:"youtubeAuth" json:"youtubeAuth"`
 }
 
 // New creates and returns a new default Settings instance.
@@ -130,6 +131,9 @@ func New() *Settings {
 			Duration: 1800, // 30 minutes
 		},
 		GoogleAuth: AuthProviderConfig{
+			Enabled: false,
+		},
+		YoutubeAuth: AuthProviderConfig{
 			Enabled: false,
 		},
 		FacebookAuth: AuthProviderConfig{
@@ -251,6 +255,7 @@ func (s *Settings) Validate() error {
 		validation.Field(&s.MailcowAuth),
 		validation.Field(&s.BitbucketAuth),
 		validation.Field(&s.PlanningcenterAuth),
+		validation.Field(&s.YoutubeAuth),
 	)
 }
 
@@ -297,6 +302,7 @@ func (s *Settings) RedactClone() (*Settings, error) {
 		&clone.RecordVerificationToken.Secret,
 		&clone.RecordFileToken.Secret,
 		&clone.GoogleAuth.ClientSecret,
+		&clone.YoutubeAuth.ClientSecret,
 		&clone.FacebookAuth.ClientSecret,
 		&clone.GithubAuth.ClientSecret,
 		&clone.GitlabAuth.ClientSecret,
@@ -365,6 +371,7 @@ func (s *Settings) NamedAuthProviderConfigs() map[string]AuthProviderConfig {
 		auth.NameMailcow:        s.MailcowAuth,
 		auth.NameBitbucket:      s.BitbucketAuth,
 		auth.NamePlanningcenter: s.PlanningcenterAuth,
+		auth.NameYoutube:        s.YoutubeAuth,
 	}
 }
 
