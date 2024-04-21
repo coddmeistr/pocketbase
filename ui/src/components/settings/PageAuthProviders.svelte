@@ -39,7 +39,6 @@
         for (const provider of providersList) {
             formSettings[provider.key] = Object.assign({ enabled: false }, data[provider.key]);
         }
-        alert(formSettings);
     }
 </script>
 
@@ -54,6 +53,32 @@
     </header>
 
     <div class="wrapper">
+        <div class="panel">
+            <h6 class="m-b-base">Manage the allowed users OAuth2 sign-in/sign-up methods.</h6>
 
+            {#if isLoading}
+                <div class="loader" />
+            {:else}
+                <div class="grid grid-sm">
+                    {#each enabledProviders as provider (provider.key)}
+                        <div class="col-lg-6">
+                            <AuthProviderCard {provider} bind:config={formSettings[provider.key]} />
+                        </div>
+                    {/each}
+                </div>
+
+                {#if enabledProviders.length > 0 && disabledProviders.length > 0}
+                    <hr />
+                {/if}
+
+                <div class="grid grid-sm">
+                    {#each disabledProviders as provider (provider.key)}
+                        <div class="col-lg-6">
+                            <AuthProviderCard {provider} bind:config={formSettings[provider.key]} />
+                        </div>
+                    {/each}
+                </div>
+            {/if}
+        </div>
     </div>
 </PageWrapper>
