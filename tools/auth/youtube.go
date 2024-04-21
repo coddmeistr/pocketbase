@@ -84,6 +84,7 @@ func (p *Youtube) FetchAuthUser(token *oauth2.Token) (*AuthUser, error) {
 	req := &http.Request{
 		Method: http.MethodGet,
 		URL:    youtubeUrl,
+		Header: map[string][]string{},
 	}
 	token.SetAuthHeader(req)
 	res, err := http.DefaultClient.Do(req)
