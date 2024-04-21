@@ -5,10 +5,10 @@ import (
 	"errors"
 	"testing"
 
+	"github.com/coddmeistr/pocketbase/forms"
+	"github.com/coddmeistr/pocketbase/models"
+	"github.com/coddmeistr/pocketbase/tests"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tests"
 )
 
 func TestRecordEmailChangeRequestValidateAndSubmit(t *testing.T) {

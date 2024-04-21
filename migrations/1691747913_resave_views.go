@@ -1,13 +1,13 @@
 package migrations
 
 import (
+	"github.com/coddmeistr/pocketbase/daos"
+	"github.com/coddmeistr/pocketbase/models"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
 )
 
 // Resave all view collections to ensure that the proper id normalization is applied.
-// (see https://github.com/pocketbase/pocketbase/issues/3110)
+// (see https://github.com/coddmeistr/pocketbase/issues/3110)
 func init() {
 	AppMigrations.Register(func(db dbx.Builder) error {
 		dao := daos.New(db)

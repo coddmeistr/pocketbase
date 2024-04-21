@@ -8,11 +8,11 @@ import (
 	"path/filepath"
 	"time"
 
+	"github.com/coddmeistr/pocketbase/core"
+	"github.com/coddmeistr/pocketbase/daos"
+	"github.com/coddmeistr/pocketbase/models"
+	"github.com/coddmeistr/pocketbase/tools/migrate"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tools/migrate"
 )
 
 const collectionsStoreKey = "migratecmd_collections"

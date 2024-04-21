@@ -9,11 +9,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/coddmeistr/pocketbase/core"
+	"github.com/coddmeistr/pocketbase/models"
+	"github.com/coddmeistr/pocketbase/tests"
+	"github.com/coddmeistr/pocketbase/tools/list"
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/list"
 )
 
 func TestCollectionsList(t *testing.T) {

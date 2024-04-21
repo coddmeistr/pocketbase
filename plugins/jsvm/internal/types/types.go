@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/plugins/jsvm"
-	"github.com/pocketbase/pocketbase/tools/list"
+	"github.com/coddmeistr/pocketbase/core"
+	"github.com/coddmeistr/pocketbase/plugins/jsvm"
+	"github.com/coddmeistr/pocketbase/tools/list"
 	"github.com/pocketbase/tygoja"
 )
 
@@ -1080,14 +1080,14 @@ func main() {
 			"github.com/labstack/echo/v5/middleware":            {"Gzip", "BodyLimit"},
 			"github.com/go-ozzo/ozzo-validation/v4":             {"Error"},
 			"github.com/pocketbase/dbx":                         {"*"},
-			"github.com/pocketbase/pocketbase/tools/security":   {"*"},
-			"github.com/pocketbase/pocketbase/tools/filesystem": {"*"},
-			"github.com/pocketbase/pocketbase/tools/template":   {"*"},
-			"github.com/pocketbase/pocketbase/tokens":           {"*"},
-			"github.com/pocketbase/pocketbase/mails":            {"*"},
-			"github.com/pocketbase/pocketbase/apis":             {"*"},
-			"github.com/pocketbase/pocketbase/forms":            {"*"},
-			"github.com/pocketbase/pocketbase":                  {"*"},
+			"github.com/coddmeistr/pocketbase/tools/security":   {"*"},
+			"github.com/coddmeistr/pocketbase/tools/filesystem": {"*"},
+			"github.com/coddmeistr/pocketbase/tools/template":   {"*"},
+			"github.com/coddmeistr/pocketbase/tokens":           {"*"},
+			"github.com/coddmeistr/pocketbase/mails":            {"*"},
+			"github.com/coddmeistr/pocketbase/apis":             {"*"},
+			"github.com/coddmeistr/pocketbase/forms":            {"*"},
+			"github.com/coddmeistr/pocketbase":                  {"*"},
 			"path/filepath":                                     {"*"},
 			"os":                                                {"*"},
 			"os/exec":                                           {"Command"},

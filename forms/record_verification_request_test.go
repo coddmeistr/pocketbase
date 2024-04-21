@@ -6,10 +6,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pocketbase/pocketbase/forms"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/types"
+	"github.com/coddmeistr/pocketbase/forms"
+	"github.com/coddmeistr/pocketbase/models"
+	"github.com/coddmeistr/pocketbase/tests"
+	"github.com/coddmeistr/pocketbase/tools/types"
 )
 
 func TestRecordVerificationRequestSubmit(t *testing.T) {

@@ -6,8 +6,8 @@ import (
 	"io"
 	"strconv"
 
+	"github.com/coddmeistr/pocketbase/tools/types"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/tools/types"
 	"golang.org/x/oauth2"
 )
 

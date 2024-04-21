@@ -1,11 +1,11 @@
 package forms
 
 import (
+	"github.com/coddmeistr/pocketbase/core"
+	"github.com/coddmeistr/pocketbase/daos"
+	"github.com/coddmeistr/pocketbase/forms/validators"
+	"github.com/coddmeistr/pocketbase/models"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/forms/validators"
-	"github.com/pocketbase/pocketbase/models"
 )
 
 // AdminPasswordResetConfirm is an admin password reset confirmation form.

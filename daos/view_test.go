@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/coddmeistr/pocketbase/core"
+	"github.com/coddmeistr/pocketbase/daos"
+	"github.com/coddmeistr/pocketbase/models"
+	"github.com/coddmeistr/pocketbase/models/schema"
+	"github.com/coddmeistr/pocketbase/tests"
+	"github.com/coddmeistr/pocketbase/tools/list"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/list"
 )
 
 func ensureNoTempViews(app core.App, t *testing.T) {

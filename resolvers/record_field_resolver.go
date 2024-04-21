@@ -6,11 +6,11 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/coddmeistr/pocketbase/models"
+	"github.com/coddmeistr/pocketbase/models/schema"
+	"github.com/coddmeistr/pocketbase/tools/search"
+	"github.com/coddmeistr/pocketbase/tools/security"
 	"github.com/pocketbase/dbx"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/models/schema"
-	"github.com/pocketbase/pocketbase/tools/search"
-	"github.com/pocketbase/pocketbase/tools/security"
 	"github.com/spf13/cast"
 )
 

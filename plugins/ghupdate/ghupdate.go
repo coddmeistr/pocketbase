@@ -21,9 +21,9 @@ import (
 	"strings"
 
 	"github.com/AlecAivazis/survey/v2"
+	"github.com/coddmeistr/pocketbase/core"
+	"github.com/coddmeistr/pocketbase/tools/archive"
 	"github.com/fatih/color"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/archive"
 	"github.com/spf13/cobra"
 )
 

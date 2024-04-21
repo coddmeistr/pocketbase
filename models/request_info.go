@@ -3,7 +3,7 @@ package models
 import (
 	"strings"
 
-	"github.com/pocketbase/pocketbase/models/schema"
+	"github.com/coddmeistr/pocketbase/models/schema"
 )
 
 const (

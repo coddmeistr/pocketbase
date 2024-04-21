@@ -3,7 +3,7 @@ package rest_test
 import (
 	"testing"
 
-	"github.com/pocketbase/pocketbase/tools/rest"
+	"github.com/coddmeistr/pocketbase/tools/rest"
 )
 
 func TestNormalizeUrl(t *testing.T) {

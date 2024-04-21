@@ -7,11 +7,11 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/coddmeistr/pocketbase/tools/filesystem"
+	"github.com/coddmeistr/pocketbase/tools/list"
+	"github.com/coddmeistr/pocketbase/tools/types"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
-	"github.com/pocketbase/pocketbase/tools/list"
-	"github.com/pocketbase/pocketbase/tools/types"
 	"github.com/spf13/cast"
 )
 

@@ -7,14 +7,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pocketbase/pocketbase/daos"
-	"github.com/pocketbase/pocketbase/migrations"
-	"github.com/pocketbase/pocketbase/migrations/logs"
-	"github.com/pocketbase/pocketbase/models"
-	"github.com/pocketbase/pocketbase/tools/list"
-	"github.com/pocketbase/pocketbase/tools/logger"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/migrate"
+	"github.com/coddmeistr/pocketbase/daos"
+	"github.com/coddmeistr/pocketbase/migrations"
+	"github.com/coddmeistr/pocketbase/migrations/logs"
+	"github.com/coddmeistr/pocketbase/models"
+	"github.com/coddmeistr/pocketbase/tools/list"
+	"github.com/coddmeistr/pocketbase/tools/logger"
+	"github.com/coddmeistr/pocketbase/tools/mailer"
+	"github.com/coddmeistr/pocketbase/tools/migrate"
 )
 
 func TestNewBaseApp(t *testing.T) {

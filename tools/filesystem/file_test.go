@@ -10,9 +10,9 @@ import (
 	"regexp"
 	"testing"
 
+	"github.com/coddmeistr/pocketbase/tests"
+	"github.com/coddmeistr/pocketbase/tools/filesystem"
 	"github.com/labstack/echo/v5"
-	"github.com/pocketbase/pocketbase/tests"
-	"github.com/pocketbase/pocketbase/tools/filesystem"
 )
 
 func TestNewFileFromPath(t *testing.T) {

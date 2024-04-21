@@ -8,10 +8,10 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/coddmeistr/pocketbase/cmd"
+	"github.com/coddmeistr/pocketbase/core"
+	"github.com/coddmeistr/pocketbase/tools/list"
 	"github.com/fatih/color"
-	"github.com/pocketbase/pocketbase/cmd"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/list"
 	"github.com/spf13/cobra"
 )
 
@@ -215,8 +215,8 @@ func (pb *PocketBase) eagerParseFlags(config *Config) error {
 // - is the default help command
 // - is the default version command
 //
-// https://github.com/pocketbase/pocketbase/issues/404
-// https://github.com/pocketbase/pocketbase/discussions/1267
+// https://github.com/coddmeistr/pocketbase/issues/404
+// https://github.com/coddmeistr/pocketbase/discussions/1267
 func (pb *PocketBase) skipBootstrap() bool {
 	flags := []string{
 		"-h",

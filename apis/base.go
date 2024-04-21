@@ -13,11 +13,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/coddmeistr/pocketbase/core"
+	"github.com/coddmeistr/pocketbase/tools/rest"
+	"github.com/coddmeistr/pocketbase/ui"
 	"github.com/labstack/echo/v5"
 	"github.com/labstack/echo/v5/middleware"
-	"github.com/pocketbase/pocketbase/core"
-	"github.com/pocketbase/pocketbase/tools/rest"
-	"github.com/pocketbase/pocketbase/ui"
 	"github.com/spf13/cast"
 )
 

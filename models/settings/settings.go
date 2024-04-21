@@ -7,13 +7,13 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/coddmeistr/pocketbase/tools/auth"
+	"github.com/coddmeistr/pocketbase/tools/cron"
+	"github.com/coddmeistr/pocketbase/tools/mailer"
+	"github.com/coddmeistr/pocketbase/tools/rest"
+	"github.com/coddmeistr/pocketbase/tools/security"
 	validation "github.com/go-ozzo/ozzo-validation/v4"
 	"github.com/go-ozzo/ozzo-validation/v4/is"
-	"github.com/pocketbase/pocketbase/tools/auth"
-	"github.com/pocketbase/pocketbase/tools/cron"
-	"github.com/pocketbase/pocketbase/tools/mailer"
-	"github.com/pocketbase/pocketbase/tools/rest"
-	"github.com/pocketbase/pocketbase/tools/security"
 )
 
 // SecretMask is the default settings secrets replacement value
